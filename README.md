@@ -1,6 +1,5 @@
-Pavyzdinis šablonas aprašant git repozitoriją. Visi studentai privalo aprašyti vadovaujantis žemiau pateiktu pavyzdžiu.<br/>
-**Marius Gžegoževkis, PI20A<br/>
-Nuotykių žaidimas "RELIKVIJŲ PAIEŠKA"<br/>**
+**Rokas Norinkevičius, PI20B<br/>
+2D platform žaidimas "City Struggle"<br/>**
 Žaidimo taisyklės ir detalus aprašas:
   - Žaidėjas žaidžia kaip kapitonas, kuriam reikia sugalvoti vardą.
   - Žaidimo tikslas - surinkti 5 relikvijas, tada žaidimas bus laimėtas.
