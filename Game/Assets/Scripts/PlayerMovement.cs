@@ -3,10 +3,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float jumpPower;
     [SerializeField] private LayerMask groundLayer;
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
+    private float horizontalInput;
 
     private void Awake()
     {
@@ -18,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
         // Apsukti zmogeliuka, kai einama i desine-kaire
@@ -39,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, speed);
+        body.velocity = new Vector2(body.velocity.x, jumpPower);
         anim.SetTrigger("Jump");
     }
 
@@ -51,6 +53,6 @@ public class PlayerMovement : MonoBehaviour
 
     public bool canAttack()
     {
-        //
+        return horizontalInput == 0 && isGrounded();
     }
 }
