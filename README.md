@@ -1,5 +1,5 @@
 **Rokas Norinkevičius, PI20B<br/>
-2D platform žaidimas "City Struggle"<br/>**
+2D platform žaidimas "Military Night"<br/>**
 Žaidimo taisyklės ir detalus aprašas:
   - Žaidėjas žaidžia kaip kapitonas, kuriam reikia sugalvoti vardą.
   - Žaidimo tikslas - surinkti 5 relikvijas, tada žaidimas bus laimėtas.
